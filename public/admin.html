@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria's Kitchen</title>
+    <link rel="stylesheet" href="./site.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Victoria's Kitchen</div>
+        <div class="items">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="events.html">Events</a>
+        </div>
+    </nav>
+    <div id="form-div">
+        <form id="apiForm"  method="post">
+            <h3>Add New Menu Item</h3>
+            <label >Item Name: </label>
+            <input type="text" id="name" placeholder="Enter Item Name" required><br><br>
+
+            <label >Description: </label>
+            <input type="text" id="description" placeholder="Enter Description" required><br><br>
+
+            <label >Price: </label>
+            <input type="text" id="price" placeholder="Enter Item Price" required><br><br>
+
+            <label >Image URL: </label>
+            <input type="text" id="image_url" placeholder="Enter Image URL" required><br><br>
+
+            <button type="submit">Submit</button>
+    
+        </form>
+        <form id="apiForm2" method="post">
+            <h3>Add New Event</h3>
+            <label >Event Name: </label>
+            <input type="text" id="name-event" placeholder="Enter Item Name" required><br><br>
+
+            <label >Location: </label>
+            <input type="text" id="location" placeholder="Enter Location" required><br><br>
+
+            <label >Date: </label>
+            <input type="text" id="date" placeholder="Enter Date" required><br><br>
+
+            <label >Time: </label>
+            <input type="text" id="time" placeholder="Enter Time" required><br><br>
+
+            <button type="submit">Submit</button>
+    
+        </form>
+    </div>
+
+</body>
+</html>

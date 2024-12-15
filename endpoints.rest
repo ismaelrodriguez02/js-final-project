@@ -1,0 +1,36 @@
+### Variable
+@url = http://localhost:3020/api/v1
+
+### GET Menu
+GET {{url}}/menu
+
+### GET Events
+GET {{url}}/events
+
+### GET specific menu item
+GET {{url}}/menu/1
+
+### GET specific event
+GET {{url}}/events/1
+
+### POST Menu Item
+POST {{url}}/add-menu
+Content-Type: application/json
+
+{
+    "name": "testeg", 
+    "description": "test", 
+    "price": "test", 
+    "image_url": "test"
+}
+
+### Post event
+POST {{url}}/add-event
+Content-Type: application/json
+
+{
+    "name": "testeg", 
+    "location": "test", 
+    "date": "test", 
+    "time": "test"
+}
